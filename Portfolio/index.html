@@ -1,1 +1,429 @@
-hi
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranav Prabhakar | Portfolio</title>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- =========================
+         HEADER / NAVBAR
+    ========================== -->
+    <header class="header">
+      <nav class="navbar container">
+        <a href="#home" class="logo"> Pranav<span>.</span> </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <section id="home" class="hero">
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <p class="hero-subtitle">Hello, I'm</p>
+
+          <h1 class="hero-title">Pranav Singh Prabhakar</h1>
+
+          <h2 class="hero-role">
+            IT Student | Aspiring Software Engineer | Web Developer
+          </h2>
+
+          <p class="hero-description">
+            Passionate about software development, problem solving, and building
+            modern web applications. Currently pursuing B.Tech in Information
+            Technology and continuously improving my programming and development
+            skills.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="resume.pdf" class="btn btn-primary" download>
+              Download Resume
+            </a>
+
+            <a href="#contact" class="btn btn-secondary"> Contact Me </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="#" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="#" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image reveal">
+          <div class="profile-card">
+            <img src="assets/profile.jpg" alt="Pranav Prabhakar" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         ABOUT SECTION
+    ========================== -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>About Me</h2>
+          <p>Get to know me better</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <i class="fas fa-user-graduate"></i>
+            <h3>Education</h3>
+
+            <p>
+              Pursuing B.Tech in Information Technology. Focused on programming,
+              web development, data structures, and software engineering.
+            </p>
+          </div>
+
+          <div class="about-card reveal">
+            <i class="fas fa-bullseye"></i>
+            <h3>Career Goal</h3>
+
+            <p>
+              To become a skilled Software Engineer and build impactful
+              technology solutions that solve real-world problems.
+            </p>
+          </div>
+
+          <div class="about-card reveal">
+            <i class="fas fa-heart"></i>
+            <h3>Interests</h3>
+
+            <p>
+              Coding, web development, technology, learning new tools,
+              open-source projects, and continuous self-improvement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         SKILLS SECTION
+    ========================== -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Skills</h2>
+          <p>Technologies and tools I work with</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming -->
+          <div class="skill-card reveal">
+            <h3>Programming</h3>
+
+            <div class="skill">
+              <span>C++</span>
+              <div class="progress-bar">
+                <div class="progress cpp"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Java</span>
+              <div class="progress-bar">
+                <div class="progress java"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>JavaScript</span>
+              <div class="progress-bar">
+                <div class="progress js"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-card reveal">
+            <h3>Web Development</h3>
+
+            <div class="skill">
+              <span>HTML</span>
+              <div class="progress-bar">
+                <div class="progress html"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>CSS</span>
+              <div class="progress-bar">
+                <div class="progress css"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>JavaScript</span>
+              <div class="progress-bar">
+                <div class="progress webjs"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card reveal">
+            <h3>Tools</h3>
+
+            <div class="skill">
+              <span>Git</span>
+              <div class="progress-bar">
+                <div class="progress git"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>GitHub</span>
+              <div class="progress-bar">
+                <div class="progress github"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>VS Code</span>
+              <div class="progress-bar">
+                <div class="progress vscode"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PROJECTS SECTION
+    ========================== -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Projects</h2>
+          <p>Some projects I've built</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <img src="assets/calculator.jpg" alt="Calculator Project" />
+            <div class="project-content">
+              <h3>Calculator App</h3>
+
+              <p>
+                Responsive calculator with arithmetic operations, keyboard
+                support, and modern UI design.
+              </p>
+
+              <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="#">GitHub</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <img src="assets/todo.jpg" alt="Todo App" />
+
+            <div class="project-content">
+              <h3>To-Do List App</h3>
+
+              <p>
+                Task management application with add, delete, complete, and
+                local storage functionality.
+              </p>
+
+              <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="#">GitHub</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <img src="assets/image.jpg" alt="Image App" />
+
+            <div class="project-content">
+              <h3>Image Gallery</h3>
+
+              <p>
+                Responsive image gallery with category filtering, smooth
+                animations, and an intuitive user interface for seamless image
+                browsing.
+              </p>
+
+              <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="#">GitHub</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         RESUME SECTION
+    ========================== -->
+    <section id="resume" class="resume section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Resume</h2>
+          <p>Education and certifications</p>
+        </div>
+
+        <div class="resume-content">
+          <a href="resume.pdf" class="btn btn-primary reveal" download>
+            Download Resume
+          </a>
+
+          <div class="timeline reveal">
+            <div class="timeline-item">
+              <h3>B.Tech in Information Technology</h3>
+              <p>Current Degree Program</p>
+            </div>
+
+            <div class="timeline-item">
+              <h3>Web Development Learning</h3>
+              <p>HTML, CSS, JavaScript Projects</p>
+            </div>
+
+            <div class="timeline-item">
+              <h3>Certifications</h3>
+              <p>Certificates will be added here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Contact Me</h2>
+          <p>Let's connect and collaborate</p>
+        </div>
+
+        <form id="contactForm" class="contact-form reveal">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject" required />
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="message"
+              rows="6"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+
+          <p id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-socials">
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="#">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+
+        <p>© 2026 Pranav Prabhakar. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollTopBtn" aria-label="Scroll To Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
