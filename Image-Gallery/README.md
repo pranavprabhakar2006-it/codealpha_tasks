@@ -1,10 +1,10 @@
-# Personal Portfolio
+# Image Gallery
 
-A responsive personal portfolio website built using HTML, CSS and JavaScript.
+Interactive image gallery with filters and lightbox functionality.
 
 ## Features
-- About Section
-- Skills Section
-- Projects Showcase
-- Contact Form
+- Category Filters
+- Search Images
+- Lightbox View
+- Keyboard Navigation
 - Responsive Design
