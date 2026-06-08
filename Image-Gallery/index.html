@@ -1,1 +1,216 @@
-hi
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Image Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Image Gallery</h1>
+
+        <p class="subtitle">
+          Explore beautiful images with filters and lightbox view
+        </p>
+      </div>
+    </header>
+
+    <!-- =========================
+         SEARCH BAR
+    ========================== -->
+    <section class="search-section">
+      <div class="container">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+
+          <input type="text" id="searchInput" placeholder="Search images..." />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         FILTER BUTTONS
+    ========================== -->
+    <section class="filters">
+      <div class="container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+
+          <button class="filter-btn" data-filter="nature">Nature</button>
+
+          <button class="filter-btn" data-filter="technology">
+            Technology
+          </button>
+
+          <button class="filter-btn" data-filter="travel">Travel</button>
+
+          <button class="filter-btn" data-filter="people">People</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         LOADING ANIMATION
+    ========================== -->
+    <div class="loader" id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- =========================
+         GALLERY SECTION
+    ========================== -->
+    <main class="gallery-section">
+      <div class="container">
+        <div class="gallery-grid">
+          <!-- Nature -->
+          <div class="gallery-item nature">
+            <img src="https://picsum.photos/500/700?random=1" alt="Nature" />
+            <div class="overlay">
+              <span>Nature</span>
+            </div>
+          </div>
+
+          <div class="gallery-item nature">
+            <img src="https://picsum.photos/500/600?random=2" alt="Nature" />
+            <div class="overlay">
+              <span>Nature</span>
+            </div>
+          </div>
+
+          <div class="gallery-item nature">
+            <img src="https://picsum.photos/500/650?random=3" alt="Nature" />
+            <div class="overlay">
+              <span>Nature</span>
+            </div>
+          </div>
+
+          <!-- Technology -->
+          <div class="gallery-item technology">
+            <img
+              src="https://picsum.photos/500/500?random=4"
+              alt="Technology"
+            />
+            <div class="overlay">
+              <span>Technology</span>
+            </div>
+          </div>
+
+          <div class="gallery-item technology">
+            <img
+              src="https://picsum.photos/500/650?random=5"
+              alt="Technology"
+            />
+            <div class="overlay">
+              <span>Technology</span>
+            </div>
+          </div>
+
+          <div class="gallery-item technology">
+            <img
+              src="https://picsum.photos/500/550?random=6"
+              alt="Technology"
+            />
+            <div class="overlay">
+              <span>Technology</span>
+            </div>
+          </div>
+
+          <!-- Travel -->
+          <div class="gallery-item travel">
+            <img src="https://picsum.photos/500/700?random=7" alt="Travel" />
+            <div class="overlay">
+              <span>Travel</span>
+            </div>
+          </div>
+
+          <div class="gallery-item travel">
+            <img src="https://picsum.photos/500/620?random=8" alt="Travel" />
+            <div class="overlay">
+              <span>Travel</span>
+            </div>
+          </div>
+
+          <div class="gallery-item travel">
+            <img src="https://picsum.photos/500/580?random=9" alt="Travel" />
+            <div class="overlay">
+              <span>Travel</span>
+            </div>
+          </div>
+
+          <!-- People -->
+          <div class="gallery-item people">
+            <img src="https://picsum.photos/500/650?random=10" alt="People" />
+            <div class="overlay">
+              <span>People</span>
+            </div>
+          </div>
+
+          <div class="gallery-item people">
+            <img src="https://picsum.photos/500/500?random=11" alt="People" />
+            <div class="overlay">
+              <span>People</span>
+            </div>
+          </div>
+
+          <div class="gallery-item people">
+            <img src="https://picsum.photos/500/700?random=12" alt="People" />
+            <div class="overlay">
+              <span>People</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- =========================
+         LIGHTBOX
+    ========================== -->
+    <div class="lightbox" id="lightbox">
+      <span class="close-btn">
+        <i class="fas fa-times"></i>
+      </span>
+
+      <button class="nav-btn prev-btn">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <img id="lightbox-image" src="" alt="Preview" />
+
+      <button class="nav-btn next-btn">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Modern Image Gallery | Built with HTML, CSS & JavaScript</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
